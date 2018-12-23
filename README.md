@@ -25,6 +25,8 @@ The environment is considered solved, when the average (over 100 episodes) of th
 
 ### Getting Started
 
+0. Follow the instructions [here](https://github.com/udacity/deep-reinforcement-learning#dependencies) to install the required dependencies.
+
 1. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
     - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux.zip)
     - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis.app.zip)
