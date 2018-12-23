@@ -2,7 +2,7 @@
 
 ### Results
 
-My trained agent was able to successfully meet specifications by performing 100 sessions with an average score of ~1.5 points, exceeding the project requirements of 0.5 points.  
+My trained agent was able to successfully meet specifications by performing 100 sessions with an average score of ~2 points, exceeding the project requirements of 0.5 points.  
 
 ### Solution
 
@@ -17,7 +17,7 @@ Notable changes deviating from the template DDPG implementation of the course in
 * adding batch normalization after the first layer (following the non-linearity) of both the actor and critic networks  
 * adding gradient clipping as recommended in the course project notes  
 * adding both the left and right tennis agent's exprience to a single buffer to train common actor and critic models  
-* limiting experience saving to a session's steps with a cummulative reward < 0.3  
+* limiting experience saving to a session's steps for longer volleys  
 
 The latter was done to ensure the experience replay buffer had more variety. Otherwise the buffer can get saturated with long boring volleys sending the ball back and forth, causing the learning process to lose data on responding to the initial ball drop.
 
@@ -32,7 +32,7 @@ LR_CRITIC = 2e-4        # learning rate of the critic
 WEIGHT_DECAY = 0        # L2 weight decay  
 UPDATE_EVERY = 1        # update steps  
 
-Training was performed for 2000 episodes. The target performance was achieved around 1200 episodes with further improvements continuing until leveling off around 1300 episodes.  
+Training was performed for 2000 episodes. The target performance was achieved around 1200 episodes with further improvements continuing until leveling off around 1700 episodes before an instability drastically reduced the stability again.  
 
 ### Further Work
 
